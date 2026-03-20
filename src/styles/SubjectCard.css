@@ -1,0 +1,86 @@
+.subject_card_wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 3rem;
+}
+
+.subject_card_container {
+    font-size: 1.7rem;
+    border: 1px solid #a0a0a0;
+    border-left: 5px solid green;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px #d3d3d3;
+    height: fit-content;
+}
+
+.subject_card_container.fail {
+    border-left: 5px solid #f15151;
+}
+
+.subject_card_container * {
+    margin: 0;
+}
+
+.subject_details {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.subject_details h3 {
+    font-size: 2.3rem;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.subject_details > span {
+    background-color: green;
+    align-self: flex-start;
+    padding: 0.2rem 1rem;
+    font-size: 1.4rem;
+    color: white;
+    border-radius: 5px;
+}
+
+.subject_details > span.fail {
+    background-color: #f15151;
+    align-self: flex-start;
+    padding: 0.2rem 1rem;
+    font-size: 1.4rem;
+    color: white;
+    border-radius: 5px;
+}
+
+.subject_grade span {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.teacher_name {
+    font-size: 1.5rem;
+}
+
+.toggle_option {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #6e6e6e;
+    background-color: #ebebeb;
+}
+
+.toggle_option button {
+    margin-left: auto;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #6e6e6e;
+    padding: 0.3rem 1rem;
+}
+
+@media screen and (max-width: 400px) {
+    .subject_card_wrapper {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 3rem;
+    }
+}

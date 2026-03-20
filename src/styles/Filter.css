@@ -1,0 +1,42 @@
+.filter_container {
+    border: 1px solid #b1b1b1;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    padding: 0.6rem 0.8rem;
+    border-radius: 6px;
+    box-shadow: 0 3px 5px #d3d3d3;
+}
+
+.filter_container input {
+    border: none;
+    flex: 1;
+    padding: 0.4rem 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.filter_container input:focus {
+    outline: none;
+}
+
+/* .filter_container span {
+    font-size: 2.5rem;
+} */
+svg {
+    width: 24px;
+    height: 24px;
+}
+
+@media screen and (max-width: 1010px) {
+    .filter_container {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .filter_container {
+        width: 100%;
+    }
+}

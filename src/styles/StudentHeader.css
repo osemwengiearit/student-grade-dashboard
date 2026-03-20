@@ -1,0 +1,85 @@
+.student_header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px #d3d3d3;
+}
+
+.student_header_container * {
+    margin: 0;
+}
+
+.student_detail h1 {
+    font-size: 3.5rem;
+}
+
+.student_id {
+    font-weight: 500;
+}
+
+.overall_average {
+    font-size: 1.8rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.overall_average span:nth-of-type(2) {
+    padding: 0.2rem 1rem;
+    background-color: gold;
+    border-radius: 0.6rem;
+    font-size: 1.5rem;
+}
+
+.overall_average span:nth-of-type(2).needs_improvement {
+    padding: 0.2rem 1rem;
+    background-color: #f15151;
+    border-radius: 0.6rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+@media screen and (max-width: 630px) {
+    .student_header_container {
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 1.5rem;
+    }
+
+    .overall_average {
+        font-size: 1.8rem;
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        align-self: flex-start;
+    }
+
+    .student_detail {
+        line-height: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .student_detail h1 {
+        font-size: 2.3rem;
+    }
+
+    .overall_average {
+        font-size: 1.3rem;
+        gap: 1rem;
+    }
+
+    .overall_average span:nth-of-type(2) {
+        font-size: 1.3rem;
+    }
+
+    .student_header_container {
+        padding: 1rem;
+    }
+}
